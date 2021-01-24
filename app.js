@@ -72,3 +72,7 @@ console.log(group.has(10));
 for(let value of Group.from(["a", "b", "c"])) {
     console.log(value);
 }
+
+//Borrowing Method
+let map = {one: true, two: true, hasOwnProperty: true};
+console.log(Object.hasOwnProperty.call(map, "one"));
